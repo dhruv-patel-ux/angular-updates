@@ -1,0 +1,4 @@
+<p>admin works!</p>
+@for(c of customer(); track c.id){
+    <p [routerLink]="['/customer', c.id]">{{c.id}} {{c.name}} {{c.loanAmount}} {{c.status}} </p>      
+}

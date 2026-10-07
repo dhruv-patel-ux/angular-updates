@@ -1,0 +1,16 @@
+<table>
+    <tr>
+        <th>Loan ID</th>
+        <th>Loan Amount</th>
+        <th>Customer ID</th>
+        <th>Status</th>
+    </tr>
+@for(l of loan().value(); track l.id){
+    <tr>
+        <td>{{l.id}}</td>
+        <td>{{l.loanAmount}}</td>
+        <td>{{l.customerId}}</td>
+        <td>{{l.status}}</td>
+    </tr>
+}       
+</table>
